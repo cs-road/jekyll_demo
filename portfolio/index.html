@@ -1,0 +1,20 @@
+---
+layout: default
+title: Portfolio
+---
+
+<section class = "content" >
+  <br/>
+  <br/>
+  <p>Check out my images below!</p >
+</section>
+<ul class="entries">
+{% for post in site.posts %}
+<li>
+  <a style="cursor:pointer;" href="/jekyll_demo{{ post.url }}">
+    <img src="{{ post.image }}" / >
+    <h3> {{ post.title }} </h3>
+  </a>
+</li>
+{% endfor %}
+</ul >
